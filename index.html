@@ -11,18 +11,18 @@
 <body class="text-white font-oswald bg-black">
     <header class="bg-black w-full relative w-full">
 
-        <nav class="bg-gray h-10 md:h-14 w-full bg-gray-100 absolute bg-opacity-10 z-10">
+        <nav class="h-10 md:h-14 w-full bg-black absolute bg-opacity-20 z-10">
             <h1 class="text-2xl md:text-3xl mt-1 ml-3 text-red-all float-left lg:mt-2">Movie<span class="text-white">Junkie</span></h1>
             <div class="float-right mt-2 mr-3 lg:mr-5 lg:mt-3">
                 <a href="#" class="px-5 py-1 bg-red-600 text-xs filter drop-shadow-lg lg:mr-3 inline-block lg:text-base hover:bg-red-700 transform transition hover:-translate-y-0.5">Login</a>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 lg:h-8 w-6 inline-block text-red-600" fill="none" viewBox="0 0 24 24" stroke="white">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
+               <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 lg:h-8 lg:w-9  inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                  </svg></a>
             </div>
            
         </nav>
         <div>
-            <video src="./images/video1.mp4" autoplay muted loop class=" object-fill h-96 md:h-auto w-full"></video>
+            <video src="./images/video1.mp4" autoplay muted loop class="object-fill h-96 md:h-auto w-full"></video>
         </div>
         <div class="w-2/3 absolute top-48 md:top-32 xl:top-52 left-8 border-l-2">
             <p class="text-xs ml-3 font-extralight lg:text-2xl">Out Now</p>
@@ -36,10 +36,10 @@
 
     </header>
 
-    <main class="py-8 w-full">
+    <main class="py-10 w-full">
         <section>
             <h1 class="ml-5 lg:text-2xl">Recent releases</h1>
-            <div class="grid grid-cols-2 mt-5 ml-5 sm:grid-cols-4 justify-center">
+            <div class="grid grid-cols-2 mt-5 ml-5 sm:grid-cols-4 justify-items-center">
 
                 <div>
                     <a href="#"><img src="./images/2012.jpg" alt="Movie image"
@@ -71,6 +71,23 @@
 
         </section>
     </main>
+    <footer class="h-auto py-10 bg-gray-900 bg-opacity-50 grid grid-cols-1 place-items-center md:grid-cols-3">
+        <div class="flex py-10">
+            <input type="text" placeholder="Enter Email" class="pl-2 h-10 rounded-l text-black">
+            <button type="submit" class="bg-red-600 px-2 h-10 rounded-r shadow-2xl">Get updates</button>
+        </div>
+        <h1 class="text-2xl md:text-3xl text-red-all py-10 ">Movie<span class="text-white">Junkie</span></h1>
+        <div class="py-10">
+            <p class="text-2xl">Follow us
+                <img src="./images/social-media.png" alt="altimage" class="h-10 w-10 inline-block">
+            </p>
+            <div class="mt-2">
+            <a href="#"><img src="./images/insta.png" alt="instaimage" class="w-6 h-6 inline-block"></a>
+            <a href="#"><img src="./images/face.png" alt="instaimage" class="w-6 h-6 inline-block ml-2"></a>
+            <a href="#"><img src="./images/twitter (2).png" alt="instaimage" class="w-6 h-6 inline-block ml-2"></a>
+        </div>
+         </div>
+    </footer>
 </body>
 
 </html>
