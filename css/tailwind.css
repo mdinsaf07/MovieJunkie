@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+    .from-blue-1000 {
+        --tw-gradient-from: #0000ff;
+        --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(30, 58, 138, 0));
+      }
+}
+
+@layer components{
+  .font-oswald {
+    font-family: 'Oswald';
+  }
+  .p-all{
+    padding:1px 13px 1px 13px;
+  }
+  .text-red-all{
+    color:#E50914;
+  }
+}

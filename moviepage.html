@@ -1,0 +1,130 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+    <link href="build/tailwind.css" rel="stylesheet">
+</head>
+
+<body class="text-white font-oswald antialiased">
+    <header class="w-full relative w-full object-contain">
+
+        <nav class="bg-gray h-10 w-full bg-gray-100 absolute bg-opacity-10">
+            <h1 class="text-xl mt-1 ml-3 float-left">Movie<span class="text-red-400">Junkie</span></h1>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 float-right mr-3 mt-1.5" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </nav>
+        <div>
+            <img src="./images/kaithiheader2.jpg" class="object-cover h-96 w-full">
+        </div>
+        <div class="w-2/3 absolute top-48 left-8 border-l-2">
+            <p class="text-xs ml-3 font-extralight">Out Now</p>
+            <h1 class="ml-3">Kaithi</h1>
+            <p class="text-xs ml-3 filter drop-shadow-lg stroke-2">Dilli, an ex-convict, endeavours to meet his daughter for the
+                first time after leaving prison. However, his attempts are interrupted due to a drug raid planned by
+                Inspector Bejoy.</p>
+            <a href="#" class="px-5 py-1 bg-red-400 text-xs absolute mt-2.5 filter drop-shadow-lg ml-3">Watch
+                Trailer</a>
+        </div>
+
+    </header>
+
+    <main class="bg-black bg-opacity-95">
+    
+        <section class="ml-8 py-10">
+            <h1 >Theatres</h1>
+            <div class="w-7/12 py-4 grid grid-cols-2 place-items-center mt-3 border border-gray-200 border-opacity-20">
+                <button>Fun Cinemas</button>
+                <button>Brookefields</button>
+                <button class="text-gray-600 mt-2">K.G Cinemas</button>
+                <button class="text-gray-600 mt-2">Prozone</button>
+            </div>
+        </section>
+
+        <section class="ml-8">
+            <h1 >Showtimes</h1>
+            <div class="py-4 w-7/12 grid grid-cols-3 place-items-center mt-3 border border-gray-200 border-opacity-20">
+                <button class="text-green-500">4:15 pm</button>
+                <button class="text-green-500">4:30 pm</button>
+                <button class="text-yellow-400">4:45 pm</button>
+                <button class="text-yellow-400 mt-2">5:00 pm</button>
+                <button class="text-gray-600 mt-2">5:15 pm</button>
+                <button class="text-gray-600 mt-2">5:30 pm</button>
+            </div>
+            <div class="mt-5">
+                <p class="inline-block">Available<span class=" ml-2 p-all bg-green-500"></span></p>
+                <p class="inline-block ml-3">Filling Fast<span class="ml-3 p-all bg-yellow-400"></span></p>
+                <p class="inline-block ml-3">Sold<span class="ml-3 p-all bg-gray-600"></span></p>
+            </div>
+        </section>
+
+        <section class="ml-8 py-10">
+            <h1>No of seats</h1>
+            <div class="mt-3">
+            <button>1</button>
+            <button class="pl-2">2</button>
+            <button class="pl-2">3</button>
+            <button class="pl-2">4</button>
+            <button class="pl-2">5</button>
+            <button class="pl-2">6</button>
+            <button class="pl-2">7</button>
+            <button class="pl-2">8</button>
+            <button class="pl-2">9</button>
+            </div>
+        </section>
+
+        <section class="ml-3">
+            <h1 class=" ml-5">Food and Beverages</h1>
+            <div class="grid grid-cols-2 mt-5 ml-5 md:grid-cols-4">
+
+                <div class="relative">
+                    <img src="./images/popcorn.jpg" alt="Movie image"
+                        class="h-32 w-9/12 object-cover rounded shadow-inner">
+                    <p class="mt-1">Popcorn</p>
+                    <p class="text-xs">110 Rs</p>
+                </div>
+
+                <div class="">
+                    <img src="./images/nachos.jpg" alt="Movie image" class="h-32 w-9/12 rounded shadow-inner object-cover">
+                    <p class="mt-1">Nachos</p>
+                    <p class="text-xs">150 Rs</p>
+                </div>
+
+                <div class="mt-5 md:mt-0">
+                    <a href="#"><img src="./images/chicken_puff.jpg" alt="Movie image"
+                            class="rounded h-32 w-9/12 object-cover">
+                        <p class="mt-1">Chicken puff</p>
+                        <p class="text-xs">180 Rs</p>
+                    </a>
+                </div>
+
+                <div class="mt-5 md:mt-0">
+                    <img src="./images/pepsi.jpg" alt="Movie image" class="rounded h-32 w-9/12 object-cover">
+                    <p class="mt-1">Pepsi</p>
+                    <p class="text-xs">90 Rs</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="ml-8 py-10">
+            <h1 >Total price</h1>
+            <div class="w-7/12 py-3 grid grid-cols-2 place-items-center mt-3 border border-gray-200 border-opacity-20">
+                <p>Tickets</p>
+                <p>450</p>
+                <p>Food</p>
+                <p>150</p>
+                <p>Total</p>
+                <p>600</p>
+            </div>
+            <a href="#" class="px-5 py-1 border border-red-400 block mt-6 w-24">Payment</a>
+        </section>
+
+
+        
+
+    </main>

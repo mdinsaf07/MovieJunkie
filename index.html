@@ -1,0 +1,76 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+    <link href="build/tailwind.css" rel="stylesheet">
+</head>
+
+<body class="text-white font-oswald bg-black">
+    <header class="bg-black w-full relative w-full">
+
+        <nav class="bg-gray h-10 md:h-14 w-full bg-gray-100 absolute bg-opacity-10 z-10">
+            <h1 class="text-2xl md:text-3xl mt-1 ml-3 text-red-all float-left lg:mt-2">Movie<span class="text-white">Junkie</span></h1>
+            <div class="float-right mt-2 mr-3 lg:mr-5 lg:mt-3">
+                <a href="#" class="px-5 py-1 bg-red-600 text-xs filter drop-shadow-lg lg:mr-3 inline-block lg:text-base hover:bg-red-700 transform transition hover:-translate-y-0.5">Login</a>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 lg:h-8 w-6 inline-block text-red-600" fill="none" viewBox="0 0 24 24" stroke="white">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+            </div>
+           
+        </nav>
+        <div>
+            <video src="images/video1.mp4" autoplay muted loop class=" object-fill h-96 md:h-auto w-full"></video>
+        </div>
+        <div class="w-2/3 absolute top-48 md:top-32 xl:top-52 left-8 border-l-2">
+            <p class="text-xs ml-3 font-extralight lg:text-2xl">Out Now</p>
+            <h1 class="ml-3 lg:text-4xl">Dhuruvangal Pathinaaru</h1>
+            <p class="text-xs ml-3 filter drop-shadow-lg sm:w-1/2 lg:text-2xl">A couple dies under mysterious circumstances and
+                Inspector Deepak is assigned the case.
+                However, he loses his leg in a confrontation during
+                the investigation, which leads to the end of his career.</p>
+            <a href="#" class="px-5 py-1 bg-red-600 text-xs absolute mt-2.5 filter drop-shadow-lg ml-3 lg:text-base hover:bg-red-700 transform transition hover:-translate-y-0.5">Book</a>
+        </div>
+
+    </header>
+
+    <main class="py-8 w-full">
+        <section>
+            <h1 class="ml-5 lg:text-2xl">Recent releases</h1>
+            <div class="grid grid-cols-2 mt-5 ml-5 sm:grid-cols-4 justify-center">
+
+                <div>
+                    <a href="#" class="hover:border-2 hover:border-red-600"><img src="./images/2012.jpg" alt="Movie image"
+                        class=" h-56 w-11/12  object-fill lg:w-9/12 lg:h-96 rounded shadow-inner transform transition hover:-translate-y-1"></a>
+                    <p class="mt-1 lg:text-xl lg:mt-2">2012</p>
+                    <p class="text-xs">English</p>
+                </div>
+
+                <div class="relative group">
+                    <img src="./images/dunkirk.jpg" alt="Movie image" class=" ml-2 w-11/12 h-56 lg:w-9/12 lg:h-96  rounded shadow-inner object-fill shadow-inner transform transition hover:-translate-y-1">
+                    <p class="mt-1 lg:text-xl lg:mt-2">Dunkirk</p>
+                    <p class="text-xs">English</p>
+                </div>
+
+                <div class="mt-5 relative group sm:mt-0">
+                    <a href="#"><img src="./images/inception.jpg" alt="Movie image"
+                            class="w-11/12 rounded h-56 lg:w-9/12 lg:h-96  object-fill shadow-inner transform transition hover:-translate-y-1 ">
+                        <p class="mt-1 lg:text-xl lg:mt-2">Inception</p>
+                        <p class="text-xs">English</p>
+                    </a>
+                </div>
+
+                <div class="mt-5 relative group sm:mt-0">
+                    <img src="./images/avatar.jpg" alt="Movie image" class="w-11/12 rounded h-56 lg:w-9/12 lg:h-96 object-fill shadow-inner transform transition hover:-translate-y-1">
+                    <p class="mt-1 lg:text-xl lg:mt-2">Avatar</p>
+                    <p class="text-xs">English</p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+</body>
+
+</html>
