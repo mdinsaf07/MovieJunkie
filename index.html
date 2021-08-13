@@ -10,46 +10,63 @@
 
 <body class="text-white font-oswald bg-black">
     <header class="bg-black w-full relative w-full">
-
+        <!--Navbar begins-->
         <nav class="h-10 md:h-14 w-full bg-black absolute bg-opacity-20 z-10">
-            <h1 class="text-2xl md:text-3xl mt-1 ml-3 text-red-all float-left lg:mt-2">Movie<span class="text-white">Junkie</span></h1>
-            <div class="float-right mt-2 mr-3 lg:mr-5 lg:mt-3">
-                <a href="#" class="px-5 py-1 bg-red-600 text-xs filter drop-shadow-lg lg:mr-3 inline-block lg:text-base hover:bg-red-700 transform transition hover:-translate-y-0.5">Login</a>
-               <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 lg:h-8 lg:w-9  inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                  </svg></a>
-            </div>
-           
+            <h1 class="text-2xl md:text-3xl mt-1 ml-3 text-red-all float-left lg:mt-2">Movie<span
+                    class="text-white">Junkie</span></h1>
+
+            <div class="inline-block float-right mr-5 mt-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 lg:h-8 lg:w-9 cursor-pointer inline-block" id="menu"
+                        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                    <ul class="hidden mt-3 block bg-black  bg-opacity-20 rounded transform transition duration-75 absolute right-6 top-12 text-center cursor-pointer" id="dropdown-content">
+                        <li class="py-1 px-5 hover:bg-red-600 hover:bg-opacity-10">Home</li>
+                        <li class="py-1 px-5 hover:bg-red-600 hover:bg-opacity-10">About</li>
+                        <li class="py-1 px-5 hover:bg-red-600 hover:bg-opacity-10">FAQ's</li>
+                    </ul>
+                </div>
+
+                <div class="float-right mt-2 mr-3 lg:mr-5 lg:mt-3">
+                    <a href="#"
+                        class="px-5 py-1 bg-red-600 text-xs filter drop-shadow-lg lg:mr-3 inline-block lg:text-base hover:bg-red-700 transform transition hover:-translate-y-0.5">Login</a>
+                </div>
+
         </nav>
+        <
         <div>
             <video src="./images/video1.mp4" autoplay muted loop class="object-fill h-96 md:h-auto w-full"></video>
         </div>
         <div class="w-2/3 absolute top-48 md:top-32 xl:top-52 left-8 border-l-2">
             <p class="text-xs ml-3 font-extralight lg:text-2xl">Out Now</p>
             <h1 class="ml-3 lg:text-4xl">Dhuruvangal Pathinaaru</h1>
-            <p class="text-xs ml-3 filter drop-shadow-lg sm:w-1/2 lg:text-2xl">A couple dies under mysterious circumstances and
+            <p class="text-xs ml-3 filter drop-shadow-lg sm:w-1/2 lg:text-2xl">A couple dies under mysterious
+                circumstances and
                 Inspector Deepak is assigned the case.
                 However, he loses his leg in a confrontation during
                 the investigation, which leads to the end of his career.</p>
-            <a href="./moviepage.html" class="px-5 py-1 bg-red-600 text-xs absolute mt-2.5 filter drop-shadow-lg ml-3 lg:text-base hover:bg-red-700 transform transition hover:-translate-y-0.5">Book</a>
+            <a href="./moviepage.html"
+                class="px-5 py-1 bg-red-600 text-xs absolute mt-2.5 filter drop-shadow-lg ml-3 lg:text-base hover:bg-red-700 transform transition hover:-translate-y-0.5">Book</a>
         </div>
 
     </header>
 
     <main class="py-10 w-full">
-        <section>
+        <section class="relative">
             <h1 class="ml-5 lg:text-2xl">Recent releases</h1>
-            <div class="grid grid-cols-2 mt-5 ml-5 sm:grid-cols-4 ">
+            <div id="movieContainer" class="grid grid-cols-2 mt-5 ml-5 sm:grid-cols-4">
 
                 <div>
                     <a href="#"><img src="./images/2012.jpg" alt="Movie image"
-                        class="border border-black hover:border-white h-56 w-11/12  object-fill lg:w-9/12 lg:h-96 rounded shadow-inner transform transition hover:-translate-y-1"></a>
+                            class="border border-black hover:border-white h-56 w-11/12  object-fill lg:w-9/12 lg:h-96 rounded shadow-inner transform transition hover:-translate-y-1"></a>
                     <p class="mt-1 lg:text-xl lg:mt-2">2012</p>
                     <p class="text-xs">English</p>
                 </div>
 
                 <div class="relative group">
-                    <img src="./images/dunkirk.jpg" alt="Movie image" class="border border-black hover:border-white ml-2 w-11/12 h-56 lg:w-9/12 lg:h-96  rounded shadow-inner object-fill shadow-inner transform transition hover:-translate-y-1">
+                    <img src="./images/dunkirk.jpg" alt="Movie image"
+                        class="border border-black hover:border-white ml-2 w-11/12 h-56 lg:w-9/12 lg:h-96  rounded shadow-inner object-fill shadow-inner transform transition hover:-translate-y-1">
                     <p class="mt-1 lg:text-xl lg:mt-2">Dunkirk</p>
                     <p class="text-xs">English</p>
                 </div>
@@ -63,14 +80,16 @@
                 </div>
 
                 <div class="mt-5 relative group sm:mt-0">
-                    <img src="./images/avatar.jpg" alt="Movie image" class="w-11/12 border border-black hover:border-white rounded h-56 lg:w-9/12 lg:h-96 object-fill shadow-inner transform transition hover:-translate-y-1">
+                    <img src="./images/avatar.jpg" alt="Movie image"
+                        class="w-11/12 border border-black hover:border-white rounded h-56 lg:w-9/12 lg:h-96 object-fill shadow-inner transform transition hover:-translate-y-1">
                     <p class="mt-1 lg:text-xl lg:mt-2">Avatar</p>
                     <p class="text-xs">English</p>
                 </div>
             </div>
-
+            <div class="hidden h-96 bg-black opacity-20 w-96 fixed top-36 left-96 transform translate-x-24"></div>
         </section>
     </main>
+
     <footer class="h-auto py-10 bg-gray-900 bg-opacity-50 grid grid-cols-1 place-items-center md:grid-cols-3">
         <div class="flex py-10">
             <input type="text" placeholder="Enter Email" class="pl-2 h-10 rounded-l text-black">
@@ -82,12 +101,13 @@
                 <img src="./images/social-media.png" alt="altimage" class="h-10 w-10 inline-block">
             </p>
             <div class="mt-2">
-            <a href="#"><img src="./images/insta.png" alt="instaimage" class="w-6 h-6 inline-block"></a>
-            <a href="#"><img src="./images/face.png" alt="instaimage" class="w-6 h-6 inline-block ml-2"></a>
-            <a href="#"><img src="./images/twitter (2).png" alt="instaimage" class="w-6 h-6 inline-block ml-2"></a>
+                <a href="#"><img src="./images/insta.png" alt="instaimage" class="w-6 h-6 inline-block"></a>
+                <a href="#"><img src="./images/face.png" alt="instaimage" class="w-6 h-6 inline-block ml-2"></a>
+                <a href="#"><img src="./images/twitter (2).png" alt="instaimage" class="w-6 h-6 inline-block ml-2"></a>
+            </div>
         </div>
-         </div>
     </footer>
 </body>
 
 </html>
+<script src="index.js"></script>
