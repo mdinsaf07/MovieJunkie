@@ -15,7 +15,7 @@ A responsive page that allows users to book cinema tickets.
 
 # Netlify
 - An intuitive Git-based workflow and powerful serverless platform to build, deploy, and collaborate on web apps
-- [View Deployement in Netlify](https://moviejunkie.netlify.app/)
+- [View Deployment in Netlify](https://moviejunkie.netlify.app/)
 
 # Download and Installation
 - Clone the repo: `$ git clone git@github.com:mdinsaf07/MovieJunkie.git`
